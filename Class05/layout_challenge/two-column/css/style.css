@@ -1,0 +1,48 @@
+/* Box-sizing */
+
+*{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+color: #333;
+background-color:white;
+font-size:18px;
+line-height: 1.4;
+width: 100%
+}
+
+header{
+background-color: #999;
+padding:10px;
+width: 100%;
+}
+
+article{
+background-color: #999;
+padding:10px;
+width: 60%;
+float: left;
+}
+
+aside{
+background-color: #999;
+padding:10px;
+width: 40%;
+float: right;
+}
+
+footer{
+background-color: #999;
+padding:10px;
+width: 100%;
+clear:both;
+}
+
+.placeholder{
+background-color: #d3d3d3;
+padding:10px;
+height: 150px;
+}
