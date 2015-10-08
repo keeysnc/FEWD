@@ -52,6 +52,7 @@ body {
      font-family: 'Open Sans', sans-serif;
      background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -86,19 +87,18 @@ h2{
   font-weight: bold;
 }
 
-.button p{
-  width: 170px;
-  height:30px;
-  line-height:30px;
+.button{
+  width: 10%;
   font-size: 14px;
   font-weight: bold;
   border-radius: 5px;
-  margin-left:auto;
-  margin-right:auto;
-  text-align:center;
   margin-top: 50px;
   background-color:#f9e42e;
   color: #121212;
+  display:block;
+  text-decoration: none;
+  margin: auto, 0;
+
 }
 
 .headInfo{

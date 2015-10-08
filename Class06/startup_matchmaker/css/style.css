@@ -1,0 +1,87 @@
+
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+body{
+width: 100%;
+
+}
+
+header{
+background-color: black;
+width:100%;
+padding:20px 20px 40px 20px;
+
+}
+
+
+header h1{
+color: #FFFF00;
+font-size: 24px;
+padding: 20px 20px 20px 25px;
+font-family: 'Merriweather', serif;
+}
+
+
+header .boldnav{
+font-family: 'Oswald', sans-serif;
+color:white;
+}
+
+header nav{
+float: right;
+color:white;
+}
+
+header a{
+padding-right: 30px;
+color:white;
+font-family: 'Source Sans Pro', sans-serif;
+text-decoration:none;
+}
+
+aside{
+float:right;
+width: 30%;
+}
+
+.hero{
+background: url(../images/coworking.jpg);
+
+}
+
+
+.subhead h2{
+font-family: 'Merriweather', serif;
+padding:0;
+margin:0;
+background-color: gray;
+width:100%;
+border-top: 5px solid #FFFF00;
+padding: 20px 0 20px 0;
+text-align:center;
+}
+
+.subhead del{
+color: #d3d3d3;
+
+}
+
+.subhead span{
+border-bottom: 3px solid #FFFF00;
+}
+
+
