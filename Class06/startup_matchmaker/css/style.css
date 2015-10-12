@@ -17,19 +17,17 @@
 
 body{
 width: 100%;
-
 }
 
 header{
 background-color: black;
 width:100%;
 padding:20px 20px 40px 20px;
-
 }
 
 
 header h1{
-color: #FFFF00;
+color: #FBEC5D;
 font-size: 24px;
 padding: 20px 20px 20px 25px;
 font-family: 'Merriweather', serif;
@@ -56,13 +54,31 @@ text-decoration:none;
 aside{
 float:right;
 width: 30%;
+background-color: rgba(255, 255, 255, 0.8);
+padding: 50px;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 18px;
+margin: 50px 45px 70px 0;
+border: black solid 1px;
+padding: 40px;
+line-height: 1.5;
 }
 
 .hero{
 background: url(../images/coworking.jpg);
-
 }
 
+.hero .button{
+text-align: center;
+font-family: 'Oswald', sans-serif;
+font-size: 18px;
+background-color: #FBEC5D;
+border-radius: 10px;
+margin-left: 40px;
+margin-right: 40px;
+padding: 10px;
+box-shadow: 10px 10px 1px -5px #d3d3d3;
+}
 
 .subhead h2{
 font-family: 'Merriweather', serif;
@@ -70,18 +86,60 @@ padding:0;
 margin:0;
 background-color: gray;
 width:100%;
-border-top: 5px solid #FFFF00;
+border-top: 5px solid #FBEC5D;
 padding: 20px 0 20px 0;
 text-align:center;
 }
 
 .subhead del{
 color: #d3d3d3;
-
 }
 
 .subhead span{
-border-bottom: 3px solid #FFFF00;
+border-bottom: 3px solid #FBEC5D;
 }
+
+.sectionDiv section{
+font-family: 'Source Sans Pro', sans-serif;
+width: 33.33%;
+float: left;
+padding: 50px;
+}
+
+section .sectionBorder{
+/* need help with borders */
+}
+
+.sectionDiv section h3{
+font-style: bold;
+font-size: 24px;
+font-color: #333333;
+}
+
+.sectionDiv section p{
+font-size: 18px;
+}
+
+.sectionDiv .button2{
+font-size: 18px;
+text-align: center;
+background-color: #d3d3d3;
+font-family: 'Oswald', sans-serif;
+border-radius: 10px;
+margin-top: 40px;
+margin-right: 70px;
+padding: 10px;
+}
+
+footer{
+background-color: #333333;
+color: white;
+font-family: 'Source Sans Pro', sans-serif;
+clear:both;
+padding: 50px 0 50px 20px;
+}
+
+
+
 
 
