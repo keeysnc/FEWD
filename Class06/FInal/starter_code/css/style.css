@@ -177,6 +177,11 @@ margin-top: 30px;
 
 /* section 1 */
 
+section .main{
+background-color: red;
+
+}
+
 .hero{
 width: 700px;
 margin-top: 70px;
