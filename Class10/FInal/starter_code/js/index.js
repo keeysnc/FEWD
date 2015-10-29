@@ -13,17 +13,33 @@
 $(document).ready(function(){
 
 		//click paragraph with the class of read more
-		$('.readmore').click(function(){
+		$('.readmore').click(showParagraph);
 
-			//slide down the paragraph with the id of show this on click
-			$('#show-this-on-click').slideDown();
-			//hide the paragraph with the class of read more
-			$('.readmore').hide();
-			//show the paragraph with the class of read less
-			$('.readless').show();
+			function showParagraph(){
+				
+				$('#show-this-on-click').slideDown();
+				$('.readmore').hide();
+				$('.readless').show();
+			}
 
+		$('.readless').click(hideParagraph);
 
-		});
+			function hideParagraph(){
+
+				$('#show-this-on-click').hide();
+				$('.readmore').show();
+				$('.readless').hide();
+			}
+
+		$('.learnmore').click(showSideParagraph);
+
+			function showSideParagraph(){
+
+				$('#learnmoretext').slideDown();
+				$('.learnmore').hide();
+			}
+
+	
 		
 
 	
