@@ -1,0 +1,111 @@
+body{
+width: 100%;
+font-family: 'Open Sans', sans-serif;
+font-size: 1em;
+line-height: 20px;
+background-color: gray;
+}
+
+.clearfix {
+ overflow: auto;
+}
+
+/* header */
+
+header{
+background: black;
+height: 70px;
+}
+
+.wrapper{
+width: 75%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.sitename{
+float: left;
+width: 50px;
+color: white;
+font-family: 'Open Sans', sans-serif;
+font-weight: 200;
+font-size: 1.5em;
+padding: 15px 20px 0 20px;
+margin-top: 10px;
+}
+
+
+
+.topBar nav{
+float: right;
+padding: 28px 20px 0 0;
+}
+
+.topBar nav li{
+float: left;
+padding: 0 0 0 50px;
+width: 22px;
+}
+
+nav li a{
+-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+text-decoration: none;
+color: white;
+font-family: 'Open Sans', sans-serif;
+font-size: .7em;
+font-weight: 200;
+padding: 10px;
+cursor: pointer;
+}
+
+li a:hover{
+background-color: #fbae01;
+color: white;
+padding: 10px;
+}
+
+
+.boxRow1{
+margin-right: auto;
+margin-left: auto;
+}
+
+.soundBox1{
+background-color: #393939;
+margin-top: 20px;
+width: 400px;
+height: 300px;
+}
+
+.soundBox2{
+background-color: #393939;
+margin-top: 20px;
+width: 400px;
+height: 300px;
+}
+
+/* New Row */
+
+.boxRow2{
+margin-right: auto;
+margin-left: auto;
+}
+
+.soundBox3{
+background-color: #393939;
+margin-top: 20px;
+width: 400px;
+height: 300px;
+}
+
+.soundBox4{
+background-color: #393939;
+margin-top: 20px;
+width: 400px;
+height: 300px;
+}
+
