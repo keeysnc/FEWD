@@ -10,16 +10,19 @@
  <!-- external CSS link -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/gallerystyle.css">
+		<link rel="stylesheet" href="mobile/style.css">
 </head>
 
 <body>
+<!--full body container-->
+<div id="container">
 
 <!--header container-->
 	<header class="clearfix">
 		<div class="wrapper">
 			<div class="topBar">
 			<div class="sitename">
-				Relaxzentrate
+				<a href="index.html">Drift<span class="emphasis">inc</span></a>
 			</div>
 			<a name="homeSection"></a>
 			<nav>
@@ -29,7 +32,7 @@
 					<li><a href ="index.html#aboutSection">About</a></li>
 					<li><a href ="index.html#contactSection">Contact</a></li>
 				</ul>
-			<nav>
+			</nav>
 <!--close topBar-->
 		</div> 
  <!--close wrapper-->
@@ -42,28 +45,48 @@
 
 <div class="wrapper clearfix">
 
-	<div class="boxRow1">
-		<div class="soundBox1">
-			City Showers
-		</div>
+	<div class="boxRow clearfix">
 
-		<div class="soundBox2">
-			Nostalgic Naptime
-		</div>
-	</div>
+		<div class="about">
+		<h2>How to Drift</h2>
 
-	<div class="boxRow2">
-		<div class="soundBox3">
-			Blah
-		</div>
+		<p>Drift is a way to get away from distracting sounds when most needed. Select a panel from our array of relaxing sounds...</p>
 
-		<div class="soundBox4">
-			Blah
-		</div>
+			<a href="application.html"><div class="boxes soundBox1">
+				<div class="boxContent">
+					<!--<audio controls>
+			 			<source src="file:///Users/nathankeeys/Documents/FEWD%20Repositories/FEWD/Final%20Project/Site/audio/rainstorm.mp3"
+			         	type='audio/mpeg'>
+						 
+						 <source src="file:///Users/nathankeeys/Documents/FEWD%20Repositories/FEWD/Final%20Project/Site/audio/rainstorm.mp3"
+						         type='audio/mpeg; codecs=vorbis'>
+						 
+						 <p>Your user agent does not support the HTML5 Audio element.</p>
+					</audio> -->
+
+
+			City Showers</div>
+			</div></a>
+
+			<a href="application.html"><div class="boxes soundBox2">
+				<div class="boxContent">Nostalgic Naptime</div>
+			</div></a>
+
+			<a href="application.html"><div class="boxes soundBox3">
+				<div class="boxContent">Blah</div>
+			</div></a>
+
+			<a href="application.html"><div class="boxes soundBox4">
+				<div class="boxContent">Blah</div>
+			</div></a>
+
 	</div>
 
 </div>
 
 
+  <script src='http://code.jquery.com/jquery-latest.min.js'></script>
+
+  <script src="js/index.js"></script>
 </body>
 </html>

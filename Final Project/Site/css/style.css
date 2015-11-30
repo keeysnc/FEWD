@@ -7,6 +7,10 @@
   box-sizing: border-box; /* IE */
 }
 
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
 body{
 width: 100%;
 font-family: 'Open Sans', sans-serif;
@@ -27,6 +31,10 @@ background-color: gray;
 header{
 background: black;
 height: 70px;
+position: fixed;
+width: 100%;
+z-index: 1;
+top:0px;
 }
 
 .wrapper{
@@ -37,15 +45,21 @@ margin-right: auto;
 
 .sitename{
 float: left;
-width: 50px;
-color: white;
 font-family: 'Open Sans', sans-serif;
-font-weight: 200;
+width: 150px;
 font-size: 1.5em;
-padding: 15px 20px 0 20px;
+color: white;
+padding: 15px 20px 0 0;
 margin-top: 10px;
+font-weight: 100;
+
 }
 
+
+.sitename a{
+text-decoration: none;
+color: white;
+}
 
 
 .topBar nav{
@@ -55,8 +69,6 @@ padding: 28px 20px 0 0;
 
 .topBar nav li{
 float: left;
-padding: 0 0 0 50px;
-width: 22px;
 }
 
 nav li a{
@@ -64,15 +76,16 @@ nav li a{
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
-  transition:.5s;
+  transition:.2s;
 text-decoration: none;
 color: white;
 font-family: 'Open Sans', sans-serif;
 font-size: .7em;
 font-weight: 200;
-padding: 10px;
 cursor: pointer;
+margin-right: 30px;
 }
+
 
 li a:hover{
 background-color: #fbae01;
@@ -85,15 +98,41 @@ padding: 10px;
 
 .hero{
 width: 100%;
-height: 550px;
+height: 700px;
 opacity: .9;
 }
 
+.heroContent, .sitename, nav{
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+ 
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+ 
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.heroContent, .sitename, nav {
+-webkit-animation-delay: 0.5s;
+-moz-animation-delay: 0.5s;
+animation-delay: 0.5s;
+}
+
+.heroContent{
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
 
 .hero .heroContent{
 width:600px;
 background: #363636;
-margin: 120px 0 0 40px;
+margin: 150px 0 0 100px;
 font-family: 'Open Sans', sans-serif;
 font-size: 5em;
 line-height: 90px;
@@ -108,6 +147,56 @@ font-style: italic;
 color: #fbae01;
 }
 
+
+/* InfoPanel */
+.infoPanel{
+  width:100%;
+  background-color: #272727;
+  border-top: solid 1px #363636;
+  border-bottom: solid 1px #363636;
+  padding: 60px;
+  height: 500px;
+}
+
+
+.infoContent1{
+color: white;
+width: 400px;
+ float: left;
+}
+
+.infoContent2{
+ color: white;
+ width: 400px;
+ float: right;
+}
+
+
+.infoPanel .alarmIcon{
+background: url("../images/alarmclock.png") no-repeat;
+width: 130px;
+height: 130px;
+margin-left: 115px;
+}
+
+.infoPanel .soundIcon{
+background: url("../images/soundicon.png") no-repeat;
+width: 300px;
+height: 130px;
+margin-left: 115px;
+}
+
+.infoPanel h2{
+font-family: 'Open Sans', sans-serif;
+font-size: 1.5em;
+padding: 20px;
+margin-bottom: 20px;
+width: 350px;
+text-align: center;
+border-bottom: 1px solid #fbae01;
+}
+
+
 /* About */
 .about{
 background-color: #363636;
@@ -115,15 +204,17 @@ color: white;
 width: 100%;
 }
 
+/* ask about another way to
+stop from breaking */
 .about .wrapper{
-padding: 50px 0 100px 0px;
+padding: 100px 0 100px 0px;
 }
 
 .about h2{
 font-family: 'Open Sans', sans-serif;
 font-size: 2em;
 padding: 20px;
-margin-bottom: 10px;
+margin-bottom: 20px;
 background-color: #fbae01;
 width: 130px;
 
@@ -131,15 +222,26 @@ width: 130px;
 
 .about p{
 font-family: 'Open Sans', sans-serif;
-font-size: 1em;
-line-height: 35px;
+font-size: 1.8em;
+line-height: 45px;
 font-weight: 300;
+}
+
+blockquote {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  color: #fbae01;
+  font-style: italic;
 }
 
 .application{
 background-color: #d3d3d3;
 color: #363636;
-height: 600px;
+height: 500px;
 width: 100%;
 }
 
@@ -175,42 +277,89 @@ cursor: pointer;
 color: #363636;
 }
 
-.application .sleepIcon{
-border: 5px solid #363636;
-padding: 20px;
-float:right;
+.application .selectBank{
+width: 200px;
+padding: 10px;
 text-align: center;
 font-family: 'Open Sans', sans-serif;
-font-size: 2em;
-
+font-size: 1em;
+background-color:#363636;
+color:white;
+margin-left: auto;
+margin-right: auto;
 }
 
-.application .workIcon{
-border: 5px solid #363636;
-padding: 20px;
-float:left;
-text-align: center;
-font-family: 'Open Sans', sans-serif;
-font-size: 2em;
-
+.application .selectBank:hover{
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+color:white;
+background-color: #727272;
 }
 
 .contact{
 background-color: #363636;
 color: white;
 width: 100%;
-height:500px ;
+color: white;
+}
+
+
+/* ask about another way to
+stop from breaking */
+
+.contact .wrapper{ 
+padding: 50px 0 100px 0px;
+margin-right: auto;
+margin-left:auto;
+}
+
+.contact h2{
+font-family: 'Open Sans', sans-serif;
+font-size: 2em;
+padding: 20px;
+background-color: #fbae01;
+width: 150px;
+text-align: center;
+}
+
+.contact h3{
+font-family: 'Open Sans', sans-serif;
+font-size: 1.5em;
+padding-top: 20px;
+}
+
+.contact p{
+font-family: 'Open Sans', sans-serif;
+font-size: 1em;
+line-height: 35px;
+font-weight: 300; 
+padding-top: 40px;
+}
+
+.contact a{
+ text-decoration: none;
+ color: #fbae01;
 }
 
 .footer{
 background-color: black;
 color: white;
 height: 100px;
+font-family: 'Open Sans', sans-serif;
+font-size: 1em;
+font-weight: 100;
+}
+
+.footer .wrapper{
+  padding: 45px 0 0 0;
 }
 
 .infoDropdown{
 clear:both;
-padding: 70px 0  0  0;
+padding: 20px 0  0  0;
 text-align: center;
 }
 

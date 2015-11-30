@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="128px" height="128px" viewBox="-4 -29 128 128"
+	 overflow="visible" enable-background="new -4 -29 128 128" xml:space="preserve">
+<defs>
+</defs>
+<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M84,7.814C84,8.469,83.515,9,82.916,9H67.084
+	C66.485,9,66,8.469,66,7.814V4.186C66,3.531,66.485,3,67.084,3h15.832C83.515,3,84,3.531,84,4.186V7.814z"/>
+<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M110,7.931C110,8.521,109.514,9,108.915,9H93.085
+	C92.486,9,92,8.521,92,7.931V2.069C92,1.479,92.486,1,93.085,1h15.829c0.6,0,1.085,0.479,1.085,1.069V7.931z"/>
+<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M121,48.903c0,4.472-3.477,8.097-7.766,8.097H8.766
+	C4.477,57,1,53.375,1,48.903V17.097C1,12.625,4.477,9,8.766,9h104.469c4.289,0,7.766,3.625,7.766,8.097V48.903z"/>
+<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M64,36.637C64,39.047,61.829,41,59.15,41h-22.3
+	C34.171,41,32,39.047,32,36.637V23.363C32,20.953,34.171,19,36.85,19h22.3c2.679,0,4.85,1.953,4.85,4.363V36.637z"/>
+<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M109,36.637c0,2.41-2.473,4.363-5.524,4.363H78.524
+	C75.473,41,73,39.047,73,36.637V23.363C73,20.953,75.473,19,78.524,19h24.952c3.051,0,5.524,1.953,5.524,4.363V36.637z"/>
+<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="11" y1="22" x2="24" y2="22"/>
+<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="11" y1="27" x2="24" y2="27"/>
+<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="11" y1="32" x2="24" y2="32"/>
+<text transform="matrix(1 0 0 1 44.4258 35.502)" fill="#FFFFFF" font-family="'alarmclock'" font-size="20.5146">0</text>
+<text transform="matrix(1.1249 0 0 1 80.5 35.6797)" fill="#FFFFFF" font-family="'alarmclock'" font-size="20.5146">0</text>
+<text transform="matrix(1.1249 0 0 1 92.3623 35.5)" fill="#FFFFFF" font-family="'alarmclock'" font-size="20.5146">0</text>
+</svg>

@@ -1,9 +1,20 @@
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
 body{
 width: 100%;
 font-family: 'Open Sans', sans-serif;
 font-size: 1em;
 line-height: 20px;
-background-color: gray;
+background-color: #363636;
 }
 
 .clearfix {
@@ -15,6 +26,10 @@ background-color: gray;
 header{
 background: black;
 height: 70px;
+position: fixed;
+width: 100%;
+z-index: 1;
+top:0px;
 }
 
 .wrapper{
@@ -30,11 +45,19 @@ color: white;
 font-family: 'Open Sans', sans-serif;
 font-weight: 200;
 font-size: 1.5em;
-padding: 15px 20px 0 20px;
+padding: 15px 20px 0 0;
 margin-top: 10px;
 }
 
+.emphasis{
+font-style: italic;
+color: #fbae01;
+}
 
+.sitename a{
+text-decoration: none;
+color: white;
+}
 
 .topBar nav{
 float: right;
@@ -43,8 +66,6 @@ padding: 28px 20px 0 0;
 
 .topBar nav li{
 float: left;
-padding: 0 0 0 50px;
-width: 22px;
 }
 
 nav li a{
@@ -52,15 +73,16 @@ nav li a{
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
-  transition:.5s;
+  transition:.2s;
 text-decoration: none;
 color: white;
 font-family: 'Open Sans', sans-serif;
 font-size: .7em;
 font-weight: 200;
-padding: 10px;
 cursor: pointer;
+margin-right: 30px;
 }
+
 
 li a:hover{
 background-color: #fbae01;
@@ -68,44 +90,128 @@ color: white;
 padding: 10px;
 }
 
-
-.boxRow1{
-margin-right: auto;
-margin-left: auto;
+.about .wrapper{
+padding: 50px 0 100px 0px;
 }
+
+.about h2{
+font-family: 'Open Sans', sans-serif;
+font-size: 2em;
+padding: 20px;
+margin-bottom: 10px;
+background-color: #fbae01;
+width: 250px;
+color: white;
+text-align: center;
+margin: 30px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.about p{
+font-family: 'Open Sans', sans-serif;
+font-size: 1em;
+line-height: 30px;
+font-weight: 300;
+color: white;
+width: 500px;
+margin: 30px 30px 50px 30px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 20px;
+border-bottom: solid white 1px;
+}
+
+
+.boxRow{
+margin-top: 100px;
+margin: auto, 0;
+}
+
 
 .soundBox1{
 background-color: #393939;
-margin-top: 20px;
-width: 400px;
+width: 49%;
 height: 300px;
+float: left;
+background: url("../images/rainywindow.jpg");
+background-size: cover;
+margin-bottom: 20px;
 }
 
 .soundBox2{
 background-color: #393939;
-margin-top: 20px;
-width: 400px;
+width: 49%;
 height: 300px;
-}
-
-/* New Row */
-
-.boxRow2{
-margin-right: auto;
-margin-left: auto;
+float: right;
+background: url("../images/winds.jpg") no-repeat center center ;
+background-size: cover;
+margin-bottom: 20px;
 }
 
 .soundBox3{
 background-color: #393939;
-margin-top: 20px;
-width: 400px;
+width: 49%;
 height: 300px;
+float: left;
+background: url("../images/medbkgd.jpg") no-repeat center center ;
+background-size: cover;
 }
 
 .soundBox4{
 background-color: #393939;
-margin-top: 20px;
-width: 400px;
+width: 49%;
 height: 300px;
+float: right;
+background: url("../images/tree.jpg") no-repeat center center ;
+background-size: cover;
 }
+
+.soundBox1, .soundBox2, .soundBox3, .soundBox4{
+  opacity:0;  /* make things invisible upon start */
+ -webkit-animation:fadeIn ease-in 1; /*/* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+ 
+  -webkit-animation-fill-mode:forwards; 
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+ 
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.boxContent{
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9em;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 110px;
+  line-height: 1.5em;
+  background-color: #393939;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.boxRow a{
+  opacity: .3;
+}
+
+a:hover{
+  opacity: 2;
+}
+
+.soundBox1, .soundBox2, .soundBox3, .soundBox4{
+-webkit-animation-delay: .5s;
+-moz-animation-delay: .5s;
+animation-delay: .5s;
+}
+
+
 
